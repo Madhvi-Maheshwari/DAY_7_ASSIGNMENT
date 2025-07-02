@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Meet the Team</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      background-color: #f4f4f4;
+      padding: 40px 0;
+    }
+
+    .team-container {
+      width: 1000px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .team-card {
+      width: 220px;
+      padding: 15px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s;
+      text-align: center;
+    }
+
+    .team-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .team-card img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .team-card h3 {
+      margin: 10px 0 5px;
+      font-size: 20px;
+    }
+
+    .team-card h4 {
+      margin: 0 0 10px;
+      color: #777;
+      font-size: 16px;
+    }
+
+    .team-card p {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="team-container">
+    <div class="team-card">
+      <img src="https://via.placeholder.com/150" alt="John Doe">
+      <h3>John Doe</h3>
+      <h4>Frontend Developer</h4>
+      <p>Passionate about building responsive and user-friendly web apps.</p>
+    </div>
+    <div class="team-card">
+      <img src="https://via.placeholder.com/150" alt="Jane Smith">
+      <h3>Jane Smith</h3>
+      <h4>UI/UX Designer</h4>
+      <p>Designs elegant interfaces that are a joy to use.</p>
+    </div>
+    <div class="team-card">
+      <img src="https://via.placeholder.com/150" alt="Mike Lee">
+      <h3>Mike Lee</h3>
+      <h4>Backend Developer</h4>
+      <p>Loves working with APIs, databases, and system logic.</p>
+    </div>
+    <div class="team-card">
+      <img src="https://via.placeholder.com/150" alt="Sara Kim">
+      <h3>Sara Kim</h3>
+      <h4>DevOps Engineer</h4>
+      <p>Keeps the infrastructure stable, scalable, and secure.</p>
+    </div>
+  </div>
+</body>
+</html>
