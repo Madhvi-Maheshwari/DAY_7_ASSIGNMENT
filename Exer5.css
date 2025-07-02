@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px 300px 100px;
+  grid-template-areas: 
+    "header header header header"
+    "sidebar content content content"
+    "footer footer footer footer";
+  gap: 10px;
+  height: 100vh;
+  padding: 10px;
+  background-color: #111;
+}
+
+.item {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  text-shadow: 1px 1px 3px black;
+}
+
+/* Grid areas */
+.item-1 {
+  grid-area: header;
+  background-color: #222;
+}
+
+/* ✅ GTA image */
+.item-2 {
+  grid-area: content;
+  background-image: url('https://cdn.mos.cms.futurecdn.net/BHKqA8YVtpHiPNrGJHZGYA.jpg');
+}
+
+/* ✅ PUBG image */
+.item-3 {
+  grid-area: sidebar;
+  background-image: url('https://cdn1.dotesports.com/wp-content/uploads/2023/09/28025539/PUBG.jpg');
+}
+
+/* ✅ COD image */
+.item-4 {
+  grid-area: footer;
+  background-image: url('https://image.api.playstation.com/vulcan/ap/rnd/202109/1522/fkVEFBDdSkMFqYFMJsOBYJkZ.jpg');
+}
